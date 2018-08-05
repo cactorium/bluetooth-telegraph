@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name telegraphparts)(type Legacy)(uri /home/kelvin/repos/bluetooth-telegraph/pcb/telegraph/telegraphparts.lib)(options "")(descr ""))
+)

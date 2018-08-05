@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AP3513E
+D Switching Voltage Regulators 18V 3A Sync Buck DC/DC 4.5V to 18V
+$ENDCMP
+#
+$CMP RN42
+D Bluetooth Modules (802.15.1) Class2 Bluetooth Mod v2.1 w/HID Firmware
+$ENDCMP
+#
+#End Doc Library
