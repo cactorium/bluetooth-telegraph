@@ -198,11 +198,11 @@ def main():
             if dist[0] not in c.distributors:
               c.distributors[dist[0]] = DistributorData(dist[1])
               # append to the field list
-              template_row = quotesplit(lines[c.last_value])
+              template_row = quotesplit(lines[c.last_value][:-1])
               row = [
                   template_row[0],
                   str(c.num_fields),
-                  dist[1]] + template_row[3:10] + [dist[0] + "\n"]
+                  dist[1]] + template_row[3:11] + [dist[0] + "\n"]
               c.num_fields += 1
               to_append.append((c.last_value, row))
               dist_added += 1
