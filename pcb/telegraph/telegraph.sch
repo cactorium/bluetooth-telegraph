@@ -44,7 +44,7 @@ U 1 1 5B65FAE2
 P 8300 2600
 F 0 "U2" H 8300 3667 50  0000 C CNN
 F 1 "RN42" H 8300 3576 50  0000 C CNN
-F 2 "RF_Module:RN42" H 8250 3450 50  0001 C CNN
+F 2 "RF_Modules:RN42" H 8250 3450 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/rn-42-ds-v2.32r.pdf" H 8300 1800 50  0001 C CNN
 F 4 "765-RN42HID-I/RM" H 8300 2600 50  0001 C CNN "Mouser"
 	1    8300 2600
@@ -931,18 +931,6 @@ Wire Wire Line
 Text Label 9400 2700 2    50   ~ 0
 RN42_CTS
 $Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5B6FEE88
-P 2300 6850
-F 0 "J3" H 2380 6842 50  0000 L CNN
-F 1 "Conn_01x02" H 2380 6751 50  0000 L CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 2300 6850 50  0001 C CNN
-F 3 "~" H 2300 6850 50  0001 C CNN
-F 4 "NoPart" H 2300 6850 50  0001 C CNN "Mouser"
-	1    2300 6850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R16
 U 1 1 5B6FF396
 P 1600 6600
@@ -1342,14 +1330,6 @@ $EndComp
 Wire Wire Line
 	2050 6750 1600 6750
 Wire Wire Line
-	2050 6850 2050 6750
-Wire Wire Line
-	2100 6850 2050 6850
-Wire Wire Line
-	2050 6950 2100 6950
-Wire Wire Line
-	2050 7050 2050 6950
-Wire Wire Line
 	1600 7050 2050 7050
 Connection ~ 1600 7050
 Wire Wire Line
@@ -1419,18 +1399,6 @@ $EndComp
 Wire Wire Line
 	1750 5450 1750 5550
 $Comp
-L Mechanical:MountingHole MH4
-U 1 1 5B6A1719
-P 1500 4850
-F 0 "MH4" H 1600 4896 50  0000 L CNN
-F 1 "MountingHole" H 1600 4805 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_4.3mm_M4_Pad" H 1500 4850 50  0001 C CNN
-F 3 "~" H 1500 4850 50  0001 C CNN
-F 4 "NoPart" H 1500 4850 50  0001 C CNN "Mouser"
-	1    1500 4850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole MH2
 U 1 1 5B6A1847
 P 1500 4600
@@ -1440,18 +1408,6 @@ F 2 "Mounting_Holes:MountingHole_4.3mm_M4_Pad" H 1500 4600 50  0001 C CNN
 F 3 "~" H 1500 4600 50  0001 C CNN
 F 4 "NoPart" H 1500 4600 50  0001 C CNN "Mouser"
 	1    1500 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole MH3
-U 1 1 5B6A1922
-P 850 4850
-F 0 "MH3" H 950 4896 50  0000 L CNN
-F 1 "MountingHole" H 950 4805 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_4.3mm_M4_Pad" H 850 4850 50  0001 C CNN
-F 3 "~" H 850 4850 50  0001 C CNN
-F 4 "NoPart" H 850 4850 50  0001 C CNN "Mouser"
-	1    850  4850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1490,5 +1446,29 @@ F 3 "~" H 2900 5450 50  0001 C CNN
 F 4 "755-RU1E002SPTCL" V 2900 5450 50  0001 C CNN "Mouser"
 	1    2900 5450
 	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 6750 2050 6600
+Wire Wire Line
+	2050 6600 2300 6600
+Wire Wire Line
+	2300 6600 2300 6700
+Wire Wire Line
+	2050 7050 2050 7200
+Wire Wire Line
+	2050 7200 2300 7200
+Wire Wire Line
+	2300 7200 2300 7100
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5B6CF995
+P 2300 6900
+F 0 "SW1" V 2254 6998 50  0000 L CNN
+F 1 "SW_SPST" V 2345 6998 50  0000 L CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 2300 6900 50  0001 C CNN
+F 3 "" H 2300 6900 50  0001 C CNN
+F 4 "NoPart" V 2300 6900 50  0001 C CNN "Mouser"
+	1    2300 6900
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
